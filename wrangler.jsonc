@@ -10,7 +10,7 @@
 	"migrations": [
 		{
 			"new_sqlite_classes": [
-				"MyDurableObject"
+				"ShellDurableObject"
 			],
 			"tag": "v1"
 		}
@@ -18,11 +18,16 @@
 	"durable_objects": {
 		"bindings": [
 			{
-				"class_name": "MyDurableObject",
-				"name": "MY_DURABLE_OBJECT"
+				"class_name": "ShellDurableObject",
+				"name": "SHELL"
 			}
 		]
 	},
+	"worker_loaders": [
+		{
+			"binding": "LOADER"
+		}
+	],
 	"observability": {
 		"enabled": true
 	},
