@@ -12,6 +12,4 @@ pnpm dev
 curl http://localhost:8787
 ```
 
-```sh
-curl http://localhost:8787 -H 'content-type: application/json' -d '{"code":"async () => await state.readFile(\"/hello.txt\")"}'
-```
+Each request increments a counter and appends a message to a history file in the Durable Object workspace.
